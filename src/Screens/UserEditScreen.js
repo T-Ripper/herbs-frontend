@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../Component/Message";
 import Loader from "../Component/Loader";
@@ -13,7 +13,7 @@ const UserEditScreen = ({ match, history }) => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
   const [isAdmin, setIsAdmin] = useState(false);
 
   const dispatch = useDispatch();
