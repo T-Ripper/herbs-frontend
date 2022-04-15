@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./Component/Header";
@@ -18,8 +18,18 @@ import UserEditScreen from "./Screens/UserEditScreen";
 import ProductListScreen from "./Screens/ProductListScreen";
 import ProductEditScreen from "./Screens/ProductEditScreen";
 import OrderListScreen from "./Screens/OrderListScreen";
+import axios from "axios";
+
+export const api = axios.create({
+  baseURL: `https://herbs-backend.herokuapp.com/`,
+});
 
 const App = () => {
+  useEffect(() => {
+    api.get("/").then((res) => {
+      console.log(res.data);
+    });
+  }, []);
   return (
     <Router>
       <Header />
