@@ -66,7 +66,7 @@ const OrderScreen = ({ match, history }) => {
     reference: new Date().getTime().toString(),
     email: email,
     amount: amount,
-    publicKey: "pk_test_71d98a08f5170e693037c1b26bcc6dd76cea3c75",
+    publicKey: "pk_live_2ea5dc3c8be21b201407fe19c9ee3994e56d539a",
   };
 
   useEffect(() => {

@@ -3,12 +3,12 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../logo03.png";
 import { Image } from "react-bootstrap";
-// import payment from '../asset/payment.png'
-// import { mobile } from '../responsive';
+import Paystack from "../Pics/Paystack.png";
+import { mobile } from "./responsive";
 
 const Container = styled.div`
   display: flex;
-  ${"" /* ${mobile({ flexDirection: "column" } )} */}
+  ${mobile({ flexDirection: "column" })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -37,7 +37,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
-  ${"" /* ${mobile({ display: "none"})} */}
+  ${mobile({ display: "none" })}
 `;
 const Title = styled.h3`
   margin-bottom: 30px;
@@ -59,7 +59,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
-  ${"" /* ${mobile({ backgroundColor: "#ff8f8"})} */}
+  ${mobile({ backgroundColor: "#ff8f8" })}
 `;
 
 const ContactItem = styled.div`
@@ -119,7 +119,7 @@ const Footer = () => {
           <MailOutline style={{ marginRight: "10px" }} />
           Atumoala-globalHerbs@gmail.com
         </ContactItem>
-        <Payment src="" alt="paystack" />
+        <Payment src={Paystack} alt="paystack" style={{ width: "40px" }} />
       </Right>
     </Container>
   );
