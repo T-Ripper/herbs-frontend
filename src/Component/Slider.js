@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ display: "none" })}
+  ${mobile({ width: "500px", height: "600px" })}
 `;
 
 const Arrow = styled.div`
@@ -56,11 +56,13 @@ const ImgContainer = styled.div`
 const Image = styled.img`
   height: 80%;
   width: 70%;
+  ${mobile({ width: "88%" })}
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 40px;
+  ${mobile({ padding: "2px" })}
 `;
 
 const Title = styled.h1`
