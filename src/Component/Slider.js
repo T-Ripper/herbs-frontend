@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ width: "500px", height: "600px" })}
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
@@ -51,12 +51,13 @@ const Slide = styled.div`
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  ${mobile({ width: "100%", height: "70%" })}
 `;
 
 const Image = styled.img`
   height: 80%;
   width: 70%;
-  ${mobile({ width: "88%" })}
+  ${mobile({ width: "100%", height: "70%" })}
 `;
 
 const InfoContainer = styled.div`
@@ -75,6 +76,7 @@ const Desc = styled.p`
   font-weight: 500;
   letter-spacing: 1px;
   color: black;
+  ${mobile({ display: "none" })}
 `;
 
 const Button = styled.button`
